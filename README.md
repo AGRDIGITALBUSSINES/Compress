@@ -14,6 +14,25 @@ Una aplicación de escritorio desarrollada en Python para comprimir archivos PDF
 
 ## 🚀 Instalación
 
+### Opción 1: Ejecutable Independiente (Recomendado)
+
+**Para usuarios finales que solo quieren usar la aplicación:**
+
+1. **Descarga el ejecutable** desde [Releases](https://github.com/AGRDIGITALBUSSINES/pdf-compressor/releases)
+2. **Descarga** `PDF_Compressor.exe` (≈36 MB)
+3. **Ejecuta directamente** - No necesitas instalar Python ni dependencias
+4. **¡Listo!** La aplicación se abrirá inmediatamente
+
+✅ **Ventajas del ejecutable:**
+- Sin instalaciones previas necesarias
+- Funciona en cualquier PC con Windows
+- Un solo archivo para distribuir
+- Ideal para usuarios no técnicos
+
+### Opción 2: Instalación para Desarrolladores
+
+**Para desarrolladores que quieren modificar el código:**
+
 ### Prerrequisitos
 
 - Python 3.8 o superior
@@ -93,6 +112,25 @@ pip install -r requirements.txt
 # Ejecutar la aplicación
 python main.py
 ```
+
+### Crear ejecutable independiente
+
+Si quieres crear tu propio ejecutable:
+
+```bash
+# Instalar PyInstaller
+pip install pyinstaller
+
+# Crear el ejecutable
+pyinstaller --onefile --windowed --name "PDF_Compressor" --distpath "release" main.py
+```
+
+O usar el script automático:
+```bash
+python create_exe.py
+```
+
+El ejecutable se generará en la carpeta `release/` y tendrá aproximadamente 36 MB.
 
 ## 🤝 Contribuir
 

@@ -178,3 +178,9 @@ Desktop.ini
 test_*.pdf
 *_comprimido.pdf
 *_compressed.pdf
+
+# Build and distribution files
+build/
+dist/
+release/
+*.spec
